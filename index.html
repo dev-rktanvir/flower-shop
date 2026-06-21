@@ -25,7 +25,7 @@
         --color-primary: #E95A08;
         --color-secondery: #000000;
         --color-text: rgba(0, 0, 0, 0.5);
-        
+
         --font-noto: "Noto Serif", serif;
         --font-inter: "Inter", sans-serif;
       }
@@ -34,8 +34,57 @@
 
 <body class="font-noto">
     <!-- Header -->
-    <header>
+    <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <nav class="flex items-center justify-between">
+            <!-- Logo -->
+            <a href="/" aria-label="Flower Shop Home">
+                <img src="./assets/logo.png" alt="Flower Shop Logo">
+            </a>
 
+            <!-- Desktop Navigation -->
+            <ul class="hidden md:flex items-center gap-8 font-semibold text-secondary">
+                <li>
+                    <a href="#" class="hover:text-primary transition-colors duration-200">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="hover:text-primary transition-colors duration-200">
+                        Shop
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="hover:text-primary transition-colors duration-200">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#"
+                        class="flex items-center gap-2 hover:text-primary transition-colors duration-200">
+                        <!-- Cart Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M2.25 3h1.386a.75.75 0 01.728.568l.893 3.572m0 0L6.75 15h10.878a.75.75 0 00.728-.568l1.8-7.2H5.257zm1.493 11.25a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25zm10.5 0a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25z" />
+                        </svg>
+
+                        <span>Cart ($56)</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button type="button" aria-label="Open menu" class="md:hidden text-black">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    class="w-7 h-7">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </nav>
     </header>
 
     <!-- Main -->
