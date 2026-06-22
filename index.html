@@ -32,7 +32,7 @@
     </style>
 </head>
 
-<body class="font-noto">
+<body class="font-inter">
     <!-- Header -->
     <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <nav class="flex items-center justify-between">
@@ -62,8 +62,7 @@
                 </li>
 
                 <li>
-                    <a href="#"
-                        class="flex items-center gap-2 hover:text-primary transition-colors duration-200">
+                    <a href="#" class="flex items-center gap-2 hover:text-primary transition-colors duration-200">
                         <!-- Cart Icon -->
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                             class="w-5 h-5">
@@ -77,9 +76,9 @@
             </ul>
 
             <!-- Mobile Menu Button -->
-            <button type="button" aria-label="Open menu" class="md:hidden text-black">
+            <button type="button" aria-label="Open menu" class="md:hidden text-secondary">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                    class="w-7 h-7">
+                    class="w-8 h-8">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                         d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
@@ -89,7 +88,32 @@
 
     <!-- Main -->
     <main>
+        <!-- Hero section -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+            <div class="flex flex-col-reverse items-center gap-10 lg:flex-row lg:justify-between lg:pt-28">
 
+                <!-- Content -->
+                <div class="max-w-xl">
+                    <h1 class="font-noto text-4xl font-bold leading-tight text-secondary sm:text-5xl lg:text-6xl">
+                        ALWAYS
+                        <span class="text-primary">FRESH FLOWERS</span>
+                    </h1>
+
+                    <p class="mt-6 text-text text-xl leading-relaxed">
+                        Indulge your senses with the beauty and fragrance of our fresh
+                        flower collection. From classic roses to exotic blooms, we
+                        offer a wide variety of fresh flowers that are perfect for any
+                        occasion.
+                    </p>
+                </div>
+
+                <!-- Image -->
+                <div class="w-full max-w-lg">
+                    <img src="./assets/hero-flower.png" alt="Fresh flower bouquet" class="w-full h-auto object-cover">
+                </div>
+
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
